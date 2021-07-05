@@ -1,0 +1,2 @@
+rootProject.name='GuessRGB'
+include ':app'

@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
                         .toString());
         if (userGuessing < result) {
 
-            makeToast("Think Of Higher Number");
+            makeToast("Think Of Higher Number, Try Again");
         }
         else if (userGuessing > result) {
-            makeToast("Think Of Lower Number");
+            makeToast("Think Of Lower Number, Try Again");
         }
         else {
             makeToast(
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         int min = 1;
-        int max = 100;
+        int max = 10;
         result = getRandomNumber(min, max);
     }
 }
